@@ -155,7 +155,13 @@ class Enemy(Character):
 class Friend(Character):
     """
     Class for friend
+    Inherits from Character class therefore can be used for furute fun
     """
+
+    def __init__(self, name, description) -> None:
+        super().__init__(name)
+        self.description = description
+        self.conversation = "Go and beat its ass"
 
 
 class Item:
